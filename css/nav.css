@@ -1,0 +1,44 @@
+.navTable {
+    background-color: #333;
+
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+.navigation > li {
+    float: right;
+  }
+  
+.navigation > li a {
+    display: block;
+    color: #71BF44;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navigation > li a:hover {
+    transform: scale(1.1);
+    transition: .1s ease-in;
+}
+
+.navTable {
+    width: 100%;
+    height: 1em;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.alignLeft {
+    float: left;
+    text-align: left;
+}
