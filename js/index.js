@@ -12,56 +12,56 @@ $( document ).ready(function() {
 
     switch(day) {
         case 0: //Sunday
-            shopStatus = "Gesloten";
-            marketStatus = "Gesloten";
+            shopStatus = " Gesloten";
+            marketStatus = " Gesloten";
 
             shopOpen = false;
             marketOpen = false;
 
             break;
         case 1: //Monday
-            shopStatus = "Gesloten";
-            marketStatus = "Dendermonde, Heldenplein";
+            shopStatus = " Gesloten";
+            marketStatus = " Dendermonde, Heldenplein";
             
             shopOpen = false;
             marketOpen = true;
 
             break;
         case 2: //Tuesday
-            shopStatus = "Winkel: Gesloten";
-            marketStatus = "Gesloten";
+            shopStatus = " Winkel: Gesloten";
+            marketStatus = " Gesloten";
             
             shopOpen = false;
             marketOpen = false;
 
             break;
         case 3: //Wednesday
-            shopStatus = "Open: 09:00 - 17:00";
-            marketStatus = "Baasrode, Dorpsplein";
+            shopStatus = " Open: 09:00 - 17:00";
+            marketStatus = " Baasrode, Dorpsplein";
             
             shopOpen = true;
             marketOpen = true;
 
             break;
         case 4: //Thursday
-            shopStatus = "Gesloten";
-            marketStatus = "Buggenhout";
+            shopStatus = " Gesloten";
+            marketStatus = " Buggenhout";
             
             shopOpen = false;
             marketOpen = true;
 
             break;
         case 5: //Friday
-            shopStatus = "Open: 09:00 - 17:00";
-            marketStatus = "Gesloten";
+            shopStatus = " Open: 09:00 - 17:00";
+            marketStatus = " Gesloten";
             
             shopOpen = true;
             marketOpen = false;
 
             break;
         case 6: //Saturday
-            shopStatus = "Open: 09:00 - 13:00";
-            marketStatus = "Moerzeke, Molenplein";
+            shopStatus = " Open: 09:00 - 13:00";
+            marketStatus = " Moerzeke, Molenplein";
             
             shopOpen = true;
             marketOpen = true;
