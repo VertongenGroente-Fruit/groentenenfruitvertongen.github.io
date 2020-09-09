@@ -1,3 +1,7 @@
+<!--
+    Copyright (C) 2020 - Tobias de Bruijn
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,42 +11,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#71BF44">
 
-        <meta name="description" content="DESCRIPTION">
+        <link type="image/png" rel="icon" href="images/icon.png">
+
+        <meta name="description" content="Versmarkt Jo Vertongen te Dendermonde.">
         <meta name="keywords" content="Dendermonde, Groenten en fruit, Jo Vertongen, Versmarkt">
         <meta name="author" content="Tobias de Bruijn">
 
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
         <!--<link rel="manifest" href="manifest.webmanifest">-->
 
+        <link href="css/about.css" type="text/css" rel="stylesheet">
         <link href="css/nav.css" type="text/css" rel="stylesheet">
-        <link href="css/bodyTable.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <!--PWA-->
-        <!--<script>
+        <script>
             // Let's register our serviceworker
             navigator.serviceWorker.register('sw.js', {
                 // The scope cannot be parent to the script url
                 scope: './'
             });
-        </script>-->
-        <div class="container">
-            <div class="navbarContainer">
-                <table class="navTable">
-                    <tr>
-                        <td class="alignLeft">
-                            <img src="images/logo_transparent.png" width="295px" height="115px" alt="Logo">
-                        </td>
-                        <td>
-                            <ul class="navigation">
-                                <li><a href="/contact.html">Contact</a></li>
-                                <li><a href="/about.html">Over ons</a></li>
-                                <li><a href="/timetable.html">Openingstijden</a></li>
-                                <li><a href="/index.html">Promo</a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-                <hr width="100%">
+        </script>
+        <div class="container-fluid">
+
+            <!--Navigation-->
+            <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+
+                <!--Logo-->
+                <a class="navbar-brand" href="/index.html">
+                    <img src="images/logo_transparent_148x58.png" width="148px" height="58px" alt="Logo">
+                </a>
+
+                <!--Links-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Promo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/timetable.html">Openingstijden</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about.html">Over ons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="row justify-content-center">
+
+                <div class="col-5 whitesmoke">
+                    <p>Ons bedrijf is begonnen in 1987 te Moerzeker <br>
+                    We kopen altijd van de versmarkt en lokale boeren</p> 
+                </div>
+
+                <!--<div class="col-5 whitesmoke right">
+                    <p> col 2</p>
+                </div>-->
             </div>
         </div>
     </body>

@@ -1,3 +1,7 @@
+<!--
+    Copyright (C) 2020 - Tobias de Bruijn
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,112 +11,151 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#71BF44">
 
+        <link type="image/png" rel="icon" href="images/icon.png">
+
         <meta name="description" content="Versmarkt Jo Vertongen te Dendermonde.">
         <meta name="keywords" content="Dendermonde, Groenten en fruit, Jo Vertongen, Versmarkt">
         <meta name="author" content="Tobias de Bruijn">
 
-        <!--<link rel="manifest" href="manifest.webmanifest">-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        <link href="css/nav.css" type="text/css" rel="stylesheet">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="manifest" href="manifest.webmanifest">
+
+        <script src="js/index.js"></script>
+
         <link href="css/index.css" type="text/css" rel="stylesheet">
+        <link href="css/nav.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <!--PWA-->
-        <!--<script>
+        <script>
             // Let's register our serviceworker
             navigator.serviceWorker.register('sw.js', {
                 // The scope cannot be parent to the script url
                 scope: './'
             });
-        </script>-->
-        <div class="container">
-            <div class="navbarContainer">
-                <table class="navTable">
-                    <tr>
-                        <td class="alignLeft">
-                            <img src="images/logo_transparent.png" width="295px" height="115px" alt="Logo">
-                        </td>
-                        <td>
-                            <ul class="navigation">
-                                <li><a href="/contact.html">Contact</a></li>
-                                <li><a href="/about.html">Over ons</a></li>
-                                <li><a href="/timetable.html">Openingstijden</a></li>
-                                <li><a href="/index.html">Promo</a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-                <hr width="100%">
-            </div>
+        </script>
+        <div class="container-fluid">
 
-            <table class="bodyTable">
-                <tr>
-                    <td class="promotionTd">
-                        <div class="promotionContainer">
-                            <table  class="promotionTable">
-                                <tr>
-                                    <td class="promotion">
-                                        <h2 class="promoTitle" style="color:#ff0000">PROMO AARDBEIEN!!
-                                            <img src="https://cdn.discordapp.com/attachments/666212691454590976/752617896873689161/aardbeien-elke-dag.png" alt="Promo1" style="float:right"></h2>
-                                        <p> Aardbeien nu €2,50 <br>
-                                            Aanbieding geldig tot Zatderdag </p>     
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="promotion">
-                                        <h2 class="promotTitle" style="color:#ff0000">Nieuwe oogst appels!
-                                            <img src="https://cdn.discordapp.com/attachments/666212691454590976/752619280176119845/2Q.png" alt="Promo2" style="float:right"></h2>
-                                        <p> De nieuwe oogst appels zijn er weer. <br>
-                                            Delbar (Zoet, krokant): €2,55/kilo   2 voor €5<br>
-                                            Jona Gold (Zoet, krokant): €2,55/kilo   2voor €5<br>
-                                            Elstar (Zuur, krokant): €2,55/kilo</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="promotion">
-                                        <h2 class="promotTitle">PromoTitle</h2>
-                                        <p> Some paragraph text <br>
-                                            New line of paragraph text</p>
-                                    </td>
-                                </tr>
-                            </table>
+            <!--Navigation-->
+            <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+
+                <!--Logo-->
+                <a class="navbar-brand" href="/index.html">
+                    <img src="images/logo_transparent_148x58.png" width="148px" height="58px" alt="Logo">
+                </a>
+
+                <!--Links-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Promo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/timetable.html">Openingstijden</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about.html">Over ons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--Promotions and information-->
+            <div class="row justify-content-center">
+
+                <!--Promotions-->
+                <div class="col-sm-8">
+                    
+                    <!--Top promotion-->
+                    <div class="row whitesmoke promotion">
+
+                        <!--Text-->
+                        <div class="col">
+                            <h3 class="display-3">PROMO AARDBEIEN!</h3>
+                            <p> Aardbeien nu €2,50 <br>
+                                Aanbieding geldig tot Zatderdag </p> 
                         </div>
-                    </td>
-                    <td class="informationTd">
-                        <div class="contactInformationContainer">
-                            <table class="informationTable">
-                                <tr>
-                                    <td>
-                                        <img src="images/LogoPhone_Transparant.png" width="24px" height="24px" alt="PhoneIcon">
-                                    </td>
-                                    <td>
-                                        <pre>
-                                            <p><a href="tel:0478228098">0478 22 80 98</a></p>
-                                        </pre>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="https://cdn.discordapp.com/attachments/706862865025335296/752596679743766638/wJPBGQCpvCSjAAAAABJRU5ErkJggg.png" width="24px" height="24px" alt="HouseIcon">
-                                    </td>
-                                    <td>
-                                        <p> Hemelstraat 101, <br>
-                                            9200 Sint-Gilles </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="https://cdn.discordapp.com/attachments/706862865025335296/752596673871740948/8lSRPsTwo2cAAAAASUVORK5CYII.png" width="34px" height="24px" alt="MailIcon">
-                                    </td>
-                                    <td>
-                                        <a href="mailto:vertongenjohan@hotmail.com"> vertongenjohan@hotmail.com </a>
-                                    </td>
-                                </tr>
-                            </table>
+
+                        <!--Image-->
+                        <div class="col-auto promoImage">
+                            <img class="img-fluid rounded" src="https://cdn.discordapp.com/attachments/666212691454590976/752617896873689161/aardbeien-elke-dag.png" width="256px" height="64px" alt="Promo1">
                         </div>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+
+                    <!--Second promotion-->
+                    <div class="row whitesmoke promotion">
+
+                        <!--Text-->
+                        <div class="col">
+                            <h3 class="display-3">Nieuwe oogst appels! </h3>
+                            <p> De nieuwe oogst appels zijn er weer. <br>
+                                Delbar (Zoet, krokant): €2,55/kilo   2 voor €5<br>
+                                Jona Gold (Zoet, krokant): €2,55/kilo   2voor €5<br>
+                                Elstar (Zuur, krokant): €2,55/kilo</p>
+                        </div>
+
+                        <!--Image-->
+                        <div class="col-auto promoImage">
+                            <img class="img-fluid rounded" src="https://cdn.discordapp.com/attachments/666212691454590976/752619280176119845/2Q.png" alt="Promo1">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Information-->
+                <div class="col-sm-3 whitesmoke information">
+                    
+                    <!--Phone number-->
+                    <div class="row">
+
+                        <!--Icon-->
+                        <div class="col-sm-2">
+                            <img src="images/LogoPhone_Transparant.png" class="img-fluid rounded" width="36px" height="36px" alt="PhoneIcon">
+                        </div>
+
+                        <!--Link-->
+                        <div class="col-sm-10">
+                            <a href="tel:0478228098">0478 22 80 98</a>
+                        </div>
+                    </div>
+
+                    <!--Address-->
+                    <div class="row infRow">
+
+                        <!--Icon-->
+                        <div class="col-sm-2">
+                            <img src="https://cdn.discordapp.com/attachments/706862865025335296/752596679743766638/wJPBGQCpvCSjAAAAABJRU5ErkJggg.png" class="img-fluid rounded" width="36px" height="36px" alt="HouseIcon">
+                        </div>
+
+                        <!--Link-->
+                        <div class="col-sm-10">
+                            <p> Hemelstraat 101, <br>
+                                9200 Sint-Gilles </p>
+                        </div>
+                    </div>
+
+                    <!--Email-->
+                    <div class="row infRow">
+                        <div class="col-2">
+                            <img src="https://cdn.discordapp.com/attachments/706862865025335296/752596673871740948/8lSRPsTwo2cAAAAASUVORK5CYII.png" class="img-fluid rounded" width="36px" height="36px" alt="MailIcon">
+                        </div>
+                        <div class="col-10">
+                            <a href="mailto:vertongenjohan@hotmail.com"> vertongenjohan@hotmail.com </a>
+                        </div>
+                    </div>
+
+                    <div class="row infRow">
+                        <p class="openTrueFalse">Winkel: <p id="shopOpen"></p></p>
+                    </div>
+
+                    <div class="row infRow">
+                        <p class="openTrueFalse">Markt: <p id="marketOpen"></p></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

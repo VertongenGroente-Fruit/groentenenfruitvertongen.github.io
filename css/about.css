@@ -1,0 +1,9 @@
+.whitesmoke {
+    background-color:whitesmoke;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    margin-top: 0.5em;
+}
+
+.right {
+    margin-left: 2em;
+}

@@ -1,0 +1,31 @@
+.whitesmoke {
+    background-color:whitesmoke;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    margin-top: 0.5em;
+}
+
+.timetable {
+    margin-top: 0.5em !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.day {
+    font-size: 1.1em;
+    color: #71BF44;
+}
+
+h3 {
+    color: #71BF44;
+}
+
+.header {
+    width: inherit;
+    text-align: center;
+    margin: 0;
+    background-color: #343a40;
+}

@@ -1,3 +1,7 @@
+<!--
+    Copyright (C) 2020 - Tobias de Bruijn
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,75 +11,125 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#71BF44">
 
-        <meta name="description" content="DESCRIPTION">
+        <link type="image/png" rel="icon" href="images/icon.png">
+
+        <meta name="description" content="Versmarkt Jo Vertongen te Dendermonde.">
         <meta name="keywords" content="Dendermonde, Groenten en fruit, Jo Vertongen, Versmarkt">
         <meta name="author" content="Tobias de Bruijn">
 
-        <!--<link rel="manifest" href="manifest.webmanifest">-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        <link href="css/nav.css" type="text/css" rel="stylesheet">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="manifest" href="manifest.webmanifest">
+
         <link href="css/contact.css" type="text/css" rel="stylesheet">
+        <link href="css/nav.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <!--PWA-->
-        <!--<script>
+        <script>
             // Let's register our serviceworker
             navigator.serviceWorker.register('sw.js', {
                 // The scope cannot be parent to the script url
                 scope: './'
             });
-        </script>-->
-        <div class="container">
-            <div class="navbarContainer">
-                <table class="navTable">
-                    <tr>
-                        <td class="alignLeft">
-                            <img src="images/logo_transparent.png" width="295px" height="115px" alt="Logo">
-                        </td>
-                        <td>
-                            <ul class="navigation">
-                                <li><a href="/contact.html">Contact</a></li>
-                                <li><a href="/about.html">Over ons</a></li>
-                                <li><a href="/timetable.html">Openingstijden</a></li>
-                                <li><a href="/index.html">Promo</a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-                <hr width="100%">
-            </div>
+        </script>
+        <div class="container-fluid">
 
-            <table class="contactTable">
-                <tr>
-                    <td class="left">
-                        <ul class="contactInformation">
-                            <li><p>Groenten & Fruit Vertongen</p></li>
-                            <li><p><img src="images/LogoPhone_Transparant.png" width="24px" height="24px"><br><a href="tel:0478228098">0478 22 80 98</a></p></li>
-                            <li><p><img src="images/LogoMail_Transparant.png" width="24px" height="24px"><br><a href="mailto:vertongenjohan@hotmail.com">vertongenjohan@hotmail.com</a></p></li>
-                          
-                            <li><p><img src="images/LogoFacebook_Transparant.png" width="24px" height="24px"><br><a href="https://www.facebook.com/groentenenfruitvertongen">https://www.facebook.com/groentenenfruitvertongen</a></p></li>
-                            <li><p><img src="images/LogoHouse_Trasparant.png" width="24px" height="24px"><br>
-                                Hemelstraat 101<br>
-                                9200 Sint-Gilles<br>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2095.246854654804!2d4.100929027877246!3d51.02098509878498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c396cc6a318e8f%3A0x5fc0c18042c0da80!2sHemelstraat%20101%2C%209200%20Dendermonde!5e0!3m2!1snl!2sbe!4v1599504906431!5m2!1snl!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <table class="pictureTable">
-                            <tr>
-                                <td>
-                                    <img src="images/pwa_192.png">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="images/pwa_192.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
+            <!--Navigation-->
+            <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+
+                <!--Logo-->
+                <a class="navbar-brand" href="/index.html">
+                    <img src="images/logo_transparent_148x58.png" width="148px" height="58px" alt="Logo">
+                </a>
+
+                <!--Links-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Promo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/timetable.html">Openingstijden</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about.html">Over ons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--Contact information and pictures-->
+            <div class="row justify-content-center ">
+
+                <!--Contact Information-->
+                <div class="col-8 whitesmoke">
+                    
+                    <!--Information inside a table to make sure the text is next to the image-->
+                    <table class="informationTable">
+
+                        <!--Facebook-->
+                        <tr>
+                            <td>
+                                <img src="images/LogoFacebook_Transparant.png" class="img-fluid rounded" width="36px" height="36px">
+                            </td>
+                            <td>
+                                <a href="https://www.facebook.com/groentenenfruitvertongen">Facebook</a>
+                            </td>
+                        </tr>
+
+                        <!--Phone number-->
+                        <tr>
+                            <td>
+                                <img src="images/LogoPhone_Transparant.png" class="img-fluid rounded" width="36px" height="36px" alt="PhoneIcon">
+                            </td>
+                            <td>
+                                <a href="tel:0478228098">0478 22 80 98</a>
+                            </td>
+                        </tr>
+
+                        <!--Email addresss-->
+                        <tr>
+                            <td>
+                                <img src="https://cdn.discordapp.com/attachments/706862865025335296/752596673871740948/8lSRPsTwo2cAAAAASUVORK5CYII.png" class="img-fluid rounded" width="36px" height="36px" alt="MailIcon">
+                            </td>
+                            <td>
+                                <a href="mailto:vertongenjohan@hotmail.com"> vertongenjohan@hotmail.com </a>
+                            </td>
+                        </tr>
+
+                        <!--Address-->
+                        <tr>
+                            <td>
+                                <img src="https://cdn.discordapp.com/attachments/706862865025335296/752596679743766638/wJPBGQCpvCSjAAAAABJRU5ErkJggg.png" class="img-fluid rounded" width="36px" height="36px" alt="HouseIcon">
+                            </td>
+                            <td>
+                                <!--For some reason <a> aligns correctly, but <p> doesn't ¯\_(ツ)_/¯-->
+                                <a> Hemelstraat 101, 9200 Sint-Gilles </a>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <!--Google Maps-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2095.246854654804!2d4.100929027877246!3d51.02098509878498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c396cc6a318e8f%3A0x5fc0c18042c0da80!2sHemelstraat%20101%2C%209200%20Dendermonde!5e0!3m2!1snl!2sbe!4v1599504906431!5m2!1snl!2sbe" width="300" height="300" frameborder="0" style="border:0" aria-hidden="true" tabindex="0"></iframe>
+
+                </div>
+
+                <!--Pictures of Jo-->
+                <div class="col-3  pictureCol">
+                    <div class="col image whitesmoke">
+                        <img src="images/jo.png">
+                    </div>
+
+
+                    <!--<div class="col image whitesmoke">
+                        <img src="images/pwa_192.png">
+                    </div>-->
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -1,41 +1,22 @@
-.bodyTable {
-    border: none;
-    height: 100%;
-    display: inline-table
-}
-
-.bodyTable > tr {
-    height: 100%;
+.whitesmoke {
+    background-color:whitesmoke;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    margin-top: 0.5em;
 }
 
 .promotion {
-    background-color: whitesmoke;
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-    width: 100%;
-    padding: 0.5em 1em 1em 1em;
-    margin-top: 20px;
+    margin-left: 1em;
 }
 
-.promotionTable {
-    width: 100%;
+.information {
+    margin-left: 1em;
+    padding-top: 0.5em !important;
 }
 
-.contactInformationContainer {
-    background-color: whitesmoke;
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-    width: 100%;
-    height: 100%;
+.infRow {
+    margin-top: 0.5em !important;
 }
 
-.promotionTd {
-    width: 78%;
-    height: 100%;
-    padding-bottom: 12%;
-}
-
-.informationTd {
-    height: 100%;
-    overflow: show;
-    width: 20%;
-    justify-content: right;
+.openTrueFalse {
+    margin-left: 1em;
 }
