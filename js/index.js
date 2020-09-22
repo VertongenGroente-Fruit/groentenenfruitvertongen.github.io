@@ -28,7 +28,7 @@ $( document ).ready(function() {
 
             break;
         case 2: //Tuesday
-            shopStatus = " Winkel: Gesloten";
+            shopStatus = " Gesloten";
             marketStatus = " Gesloten";
             
             shopOpen = false;
