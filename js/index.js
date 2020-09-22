@@ -36,7 +36,7 @@ $( document ).ready(function() {
 
             break;
         case 3: //Wednesday
-            shopStatus = " Open: 09:00 - 17:00";
+            shopStatus = " 09:00 - 17:00";
             marketStatus = " Baasrode, Dorpsplein";
             
             shopOpen = true;
@@ -52,7 +52,7 @@ $( document ).ready(function() {
 
             break;
         case 5: //Friday
-            shopStatus = " Open: 09:00 - 17:00";
+            shopStatus = " 09:00 - 17:00";
             marketStatus = " Gesloten";
             
             shopOpen = true;
@@ -60,7 +60,7 @@ $( document ).ready(function() {
 
             break;
         case 6: //Saturday
-            shopStatus = " Open: 09:00 - 13:00";
+            shopStatus = " 09:00 - 13:00";
             marketStatus = " Moerzeke, Molenplein";
             
             shopOpen = true;
