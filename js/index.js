@@ -29,7 +29,7 @@ $( document ).ready(function() {
             break;
         case 2: //Tuesday
             shopStatus = " Gesloten";
-            marketStatus = " Gesloten";
+            marketStatus = " Testing";
             
             shopOpen = false;
             marketOpen = false;
